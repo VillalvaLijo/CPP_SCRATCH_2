@@ -23,5 +23,19 @@ int main(){
 
     cout<<"You entered: "<<user_selection<<endl;
 
+    //create an equivalence test for the string entered
+
+    if (user_selection == "Go"){
+        cout<<"Let's Go"<<endl;
+    }
+    else if (user_selection == "Stop"){
+        cout <<"You Entered Stop"<<endl;
+    }
+    else{
+        cout<<"I don't understand your entry"<<endl;
+    }
+
+    
+
     return 0;
 }
