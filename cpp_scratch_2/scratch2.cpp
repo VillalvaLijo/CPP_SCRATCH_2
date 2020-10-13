@@ -35,18 +35,25 @@ int main(){
     //     cout<<"I don't understand your entry"<<endl;
     // }
 
-    cout<< "Let's play with Const"<<endl;
+    //cout<< "Let's play with Const"<<endl;
 
-    const int Ten = 10;
+    //const int Ten = 10;
     //cin >> int user_int; this dosen't work.
-    cout <<"The int Ten is: "<<Ten<<endl;
+    //cout <<"The int Ten is: "<<Ten<<endl;
     // cout<<"Let's look at the result of Ten+=10:"<<endl;
     // Ten += 10;
     // cout<<"Ten after manipulation: "<< Ten<<endl;
 
     //doing Ten+= 10; errors out the program.
     
+    const int Lbs_per_stn = 14;
+    int lbs;
+    cout << "Enter your weight in pounds: ";
+    cin >> lbs;
 
+    int stone = lbs / Lbs_per_stn; //whole stone...CPP rounds
+    int pounds = lbs % Lbs_per_stn; // remander in pounds
+    cout << lbs << "pounds are " << stone << "stone, "<<pounds<<" pound(s).\n";
 
 
     return 0;
